@@ -11,8 +11,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         //dynamically set depending on which day+part to run
-        int day = 6;
-        int part = 3;
+        int day = 8;
+        int part = 1;
 
         String zeroFilledDay = (day < 10 ? "0" : "") + day;
         File file = new File(DATA_DAY + zeroFilledDay + ".txt");
