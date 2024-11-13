@@ -58,7 +58,6 @@ public class Day05 {
         List<Integer> newCol = clappers.get((counter + 1)% clappers.size());
         int clapperIndex = clapper%(2*newCol.size());
 
-        //1>0, 2>1, 3>2, 4>3, 5>2, 6>1
         if(clapperIndex == 0){
             clapperIndex = 2*newCol.size();
         }
