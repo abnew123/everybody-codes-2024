@@ -31,9 +31,9 @@ public class Day08 {
             int layers = 0;
             long currTot = 0;
             List<Integer> heights = new ArrayList<>();
-            //height roughly grows at 15x columns, and each column loses around 5 blocks
-            //so column = sqrt(blocks/15), and empty bricks = 5 * sqrt(blocks/15)
-            while((currTot - ((int)Math.sqrt(blocks/15.0) * 5)) < blocks ){
+            //height roughly grows at 15x the rate of layers, and each column loses around 5.5 blocks
+            //so column = sqrt(blocks/15), and empty bricks = 5.5 * sqrt(blocks/15) * 2
+            while((currTot - ((int)Math.sqrt(blocks/15.0) * 11)) < blocks ){
                 heights.add(layer);
                 layers++;
                 currTot += layer * (layers * 2L - 1);
